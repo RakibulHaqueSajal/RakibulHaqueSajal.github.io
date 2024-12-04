@@ -1,0 +1,394 @@
+/* General Body and Layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Particle.js Backgrounds */
+#particles-js, #particles-education, #particles-research, #particles-publications, #particles-skills {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Particle.js behind the content */
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(45deg, #5D6D7E, #2C3E50); /* Muted gray-blue gradient */
+    color: #FDFEFE; /* Soft white for text */
+    padding: 5em 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    border-bottom: 5px solid #AAB7B8; /* Muted silver */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 4px solid #D5D8DC; /* Light gray */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Header Text Styling */
+.header-text {
+    max-width: 800px;
+    padding: 2em;
+    background-color: rgba(44, 62, 80, 0.6); /* Semi-transparent dark gray-blue */
+    border-radius: 10px;
+    color: #FDFEFE; /* Soft white */
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #EAECEE; /* Very light gray */
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 1em 0;
+    font-weight: 400;
+    color: #D5D8DC; /* Muted silver-gray */
+}
+
+/* Social Links Styling */
+.social-links {
+    margin: 1em 0;
+}
+
+.social-links a {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+    filter: grayscale(50%); /* Muted icons */
+    opacity: 0.8; /* Slightly faded look */
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    filter: grayscale(0%); /* Full color on hover */
+    opacity: 1;
+}
+
+/* Navigation Buttons Section Inside Header */
+#navigation-buttons {
+    margin-top: 2em; /* Space between text and buttons */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-button {
+    background-color: #5DADE2; /* Muted sky blue */
+    color: #FDFEFE; /* White text */
+    padding: 1em 2em;
+    margin: 0.5em;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none; /* Remove border */
+    cursor: pointer; /* Show pointer cursor */
+    display: inline-block; /* Ensure buttons stay inline */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    background-color: #5499C7; /* Slightly darker blue on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.nav-button:active {
+    background-color: #2E86C1; /* Even darker blue when clicked */
+}
+
+/* Education Section */
+#education {
+    position: relative;
+    padding: 4em 1em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #5D6D7E, #2C3E50); /* Muted gray-blue gradient */
+    color: #FDFEFE; /* Soft white */
+    z-index: 1;
+}
+
+#particles-education {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Particle.js behind the content */
+}
+
+/* Education Content */
+.education-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: rgba(44, 62, 80, 0.6); /* Semi-transparent dark gray-blue */
+    border-radius: 10px;
+    color: #FDFEFE; /* Soft white */
+}
+
+/* Education Section Heading */
+#education h2 {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: #EAECEE; /* Very light gray for heading */
+}
+
+/* Education List Styling */
+#education ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#education ul li {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    color: #D5D8DC; /* Muted silver-gray for list items */
+}
+
+#education ul li strong {
+    color: #A9CCE3; /* Muted blue accent for emphasis */
+}
+
+#education ul li a {
+    color: #A9CCE3; /* Muted blue for links */
+    text-decoration: none;
+}
+
+#education ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Research Interest Section */
+/* Research Interest Section */
+#research-interest {
+    position: relative;
+    padding: 4em 1em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #5D6D7E, #2C3E50); /* Muted gray-blue gradient for formality */
+    color: #FDFEFE; /* Soft white */
+    z-index: 1;
+}
+
+#particles-research {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Particle.js behind the content */
+}
+
+/* Research Interests Content */
+.research-interest-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: rgba(44, 62, 80, 0.6); /* Semi-transparent dark gray-blue */
+    border-radius: 10px;
+    color: #EAECEE; /* Soft grayish white for text */
+}
+
+/* Research Interest Section Heading */
+#research-interest h2 {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: #FDFEFE; /* Soft white for heading */
+}
+
+/* Research Interest Paragraph Styling */
+#research-interest p {
+    font-size: 1.2em;
+    color: #D5D8DC; /* Muted silver-gray for paragraph text */
+}
+
+#research-interest strong {
+    font-weight: 700; /* Bold the specific fields and techniques */
+    color: #A9CCE3; /* Subtle blue for emphasis */
+}
+
+/* General Styles for Sections */
+section {
+    position: relative;
+    padding: 4em 1em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    z-index: 1;
+    color: #FDFEFE; /* Soft white for text */
+}
+
+/* Background Colors and Gradients */
+#publications,
+#professional-experience,
+#selected-projects,
+#awards-honour,
+#skills {
+    background: linear-gradient(45deg, #5D6D7E, #2C3E50); /* Muted gray-blue gradient */
+}
+
+/* Particle Effects */
+#particles-publications,
+#particles-professional,
+#particles-projects,
+#particles-awards,
+#particles-skills {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Particle.js behind the content */
+}
+
+/* Section Content */
+section .content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: rgba(44, 62, 80, 0.6); /* Semi-transparent dark gray-blue */
+    border-radius: 10px;
+    color: #EAECEE; /* Soft grayish white for content text */
+}
+
+/* Section Headings */
+section h2 {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: #FDFEFE; /* Soft white for headings */
+}
+
+/* Common Styles for Lists */
+section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section ul li {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    color: #D5D8DC; /* Muted silver-gray for list items */
+}
+
+section ul li strong {
+    color: #A9CCE3; /* Subtle muted blue for emphasis */
+}
+
+section ul li i {
+    color: #95A5A6; /* Light gray for secondary text */
+}
+
+section ul li a {
+    color: #A9CCE3; /* Subtle blue for links */
+    text-decoration: none;
+}
+
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Publications Specific */
+#publications .publication-category {
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border-radius: 10px;
+    background-color: rgba(44, 62, 80, 0.7); /* Slightly darker background */
+}
+
+#publications .publication-category h3 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #A9CCE3; /* Muted blue for category titles */
+    margin-bottom: 1em;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2C3E50; /* Dark muted blue */
+    color: #FDFEFE; /* Soft white */
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 3em;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 1.5em;
+        margin: 1em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    section p, ul li {
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 1em;
+    }
+}
